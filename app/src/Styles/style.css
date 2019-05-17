@@ -1,0 +1,10 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/images/botcamp-bg.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
