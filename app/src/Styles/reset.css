@@ -1,3 +1,8 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
 html,
 body,
 div,
@@ -86,6 +91,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -121,11 +127,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 button {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-}
-button {
-  border: 0;
+  border: none;
 }
