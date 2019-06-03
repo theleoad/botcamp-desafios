@@ -6,6 +6,7 @@
   "author": "Leo AD",
   "license": "MPL-2.0",
   "dependencies": {
+    "react-router-dom": "^5.0.0",
     "styled-components": "^4.2.0"
   },
   "repository": "git@github.com:theleoad/botcamp.git"
