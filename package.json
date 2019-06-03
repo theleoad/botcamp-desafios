@@ -7,5 +7,6 @@
   "license": "MPL-2.0",
   "dependencies": {
     "styled-components": "^4.2.0"
-  }
+  },
+  "repository": "git@github.com:theleoad/botcamp.git"
 }
