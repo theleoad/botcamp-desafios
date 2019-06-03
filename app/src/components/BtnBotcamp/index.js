@@ -10,6 +10,7 @@ const BtnBotcamp = styled.button.attrs({
   height: 50px;
   border-radius: 25px;
   text-transform: uppercase;
+  cursor: pointer;
 }  
 `;
 

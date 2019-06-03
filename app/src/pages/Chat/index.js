@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import HeaderWrapper from "../../components/HeaderWrapper";
 import LogoBotcamp from "../../components/LogoBotcamp";
@@ -10,7 +11,9 @@ const Chat = () => (
     <HeaderWrapper.SuperHeaderWrapper>
       <HeaderWrapper.HeaderWrapper>
         <LogoBotcamp small />
-        <LogoutBotcamp />
+        <Link to="/">
+          <LogoutBotcamp />
+        </Link>
       </HeaderWrapper.HeaderWrapper>
     </HeaderWrapper.SuperHeaderWrapper>
     <InputMessage />
