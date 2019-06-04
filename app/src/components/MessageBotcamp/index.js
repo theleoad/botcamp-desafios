@@ -1,27 +1,29 @@
 import styled from "styled-components";
 
-const MessageBotcamp = styled.div`
+const MessageBotcamp = styled.p`
     background: rgba(238,62,37,0.83);
-    width: 257px;
-    margin-left: auto;
-    margin-right: 16px;
-    margin-top: 40px;
-    height: 40px;
-    border-radius: 10px;
-    border-top-right-radius: inherit;
-    position: relative;
-    line-height: 30px;
-    padding: 5px 10px;
+    border-radius: 10px 0 10px 10px;
     color: white;
-    &:after {
+    font-family: Roboto, sans-serif;
+    margin-left: auto;
+    margin: 0 16px 20px auto;
+    padding: 10px 15px;
+    position: relative;
+    width: 68%;
+
+    &:first-child {
+        margin-top: 40px;
+    }
+
+    &::after {
+        border-right: 4px solid transparent;
+        border-top: 8px solid rgba(238, 62, 37, 0.83);
         content: '';
+        height: 0;
         position: absolute;
         right: -3px;
         top: 0;
-        height: 0;
         width: 0;
-        border-top: 8px solid rgba(238, 62, 37, 0.83);
-        border-right: 4px solid transparent;
     }
 `;
 

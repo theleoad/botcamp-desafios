@@ -17,7 +17,9 @@ const Chat = () => (
         </Link>
       </HeaderWrapper.HeaderWrapper>
     </HeaderWrapper.SuperHeaderWrapper>
-    <MessageBotcamp>!cpf</MessageBotcamp>
+    <div>
+      <MessageBotcamp>!cpf</MessageBotcamp>
+    </div>
     <InputMessage />
   </>
 );
