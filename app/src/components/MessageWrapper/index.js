@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { colors } from "../../variables";
 
 const MessageWrapper = styled.div`
-    background: #eaeafd;
+    background: ${colors.lightPurple};
     height: 100vh;
     padding-top: 100px;
     position: absolute;

@@ -4,10 +4,10 @@ import { Wrapper } from "./styles";
 import Avatar from "../Avatar";
 import MessageBotcamp from "../MessageBotcamp";
 
-const BotMessage = () => (
+const BotMessage = (props) => (
     <Wrapper>
         <Avatar />
-        <MessageBotcamp bot>Legal</MessageBotcamp>
+        <MessageBotcamp bot>{props.children}</MessageBotcamp>
     </Wrapper>
 );
 

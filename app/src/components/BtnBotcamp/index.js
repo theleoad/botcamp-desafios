@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import { colors } from "./../../variables"; 
 
 const BtnBotcamp = styled.button.attrs({
   children: props => props.content
 })`
-  background: #ee3e25;
-  color: #fff;
+  background: ${colors.tomato};
+  color: ${colors.white};
   font-size: 20px;
   width: 280px;
   height: 50px;

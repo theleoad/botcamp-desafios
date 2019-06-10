@@ -1,11 +1,13 @@
 import styled from "styled-components";
+import { colors } from "./../../variables"; 
+
 import avatarBotcamp from "../../img/botcamp-avatar.svg";
 
 const Avatar = styled.img.attrs({
   src: avatarBotcamp,
   alt: "Avatar Botcamp"    
 })`
-  background: #26265e;
+  background: ${colors.darkBlue};
   border-radius: 50%;
   box-sizing: content-box;
   height: 28px;

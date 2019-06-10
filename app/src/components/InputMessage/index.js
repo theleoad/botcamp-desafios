@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../variables";
 
 const InputMessage = styled.input.attrs({
   type: 'text',
@@ -12,7 +13,7 @@ const InputMessage = styled.input.attrs({
   padding: 14px 11px 14px 16px;
   width: 100vw;
   height: 50px;
-  background: #fbfbff;
+  background: ${colors.lightGray};
   position: absolute; /*temporário*/
   bottom: 0; /*temporário*/
 }

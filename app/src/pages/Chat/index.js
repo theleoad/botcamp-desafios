@@ -9,6 +9,10 @@ import MessageBotcamp from "../../components/MessageBotcamp";
 import BotMessage from "../../components/BotMessage";
 import FormMessage from "../../components/FormMessage";
 import MessageWrapper from "../../components/MessageWrapper";
+import InputFile from "../../components/InputFile";
+import LabelForInput from "../../components/LabelForInput";
+import ImageUpload from "../../components/ImageUpload";
+import BtnMicrophone from "../../components/BtnMicrophone";
 
 const Chat = () => {
   const [typing, setTyping] = useState("");
@@ -21,6 +25,20 @@ const Chat = () => {
   }
 
   const handleChange = (event) => setTyping(event.target.value);
+
+  /***/
+
+  const [imgFiles, setImgFiles] = useState([]);
+  const [classChange, setClassChange] = useState("");
+
+  const handleUpload = (event) => {
+    setImgFiles(URL.createObjectURL(event.target.files[0]));
+    setClassChange("show");
+    console.log(imgFiles);
+  };
+
+  /****/
+  
   
   return (
     <div>
@@ -32,13 +50,17 @@ const Chat = () => {
       </HeaderWrapper>
 
       <MessageWrapper>
-        {messages.map((message, key) => <MessageBotcamp key={key}>{message}</MessageBotcamp>)}
-        <BotMessage />
         <MessageBotcamp>!cpf</MessageBotcamp>
+        <BotMessage>123.456.789-10</BotMessage>
+        {messages.map((message, key) => <MessageBotcamp key={key}>{message}</MessageBotcamp>)}
+        <MessageBotcamp imgUp className={classChange}> <ImageUpload src={imgFiles} /></MessageBotcamp>
       </MessageWrapper>
       
       <FormMessage onSubmit={handleSubmit}>
         <InputMessage value={typing} onChange={handleChange}/>
+        <LabelForInput />
+        <InputFile onChange={handleUpload}/>
+        <BtnMicrophone />
       </FormMessage>
     </div>
   )
